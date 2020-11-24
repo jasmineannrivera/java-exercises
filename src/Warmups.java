@@ -1,3 +1,6 @@
+import java.util.Arrays;
+
+
 public class Warmups {
 
     public static int countWords(String str) {
@@ -6,10 +9,16 @@ public class Warmups {
     }
 
 
+    public static int differenceMaxMin(int[] arr) {
+        Arrays.sort(arr);
+        return (arr[arr.length - 1]) - arr[0];
+
+    }
+
+
     public static void main(String[] args) {
-        System.out.println(countWords("Just an example here move along"));
-        System.out.println(countWords("This is a test"));
-        System.out.println(countWords("What an easy task, right"));
+
+
     }
 }
 
