@@ -32,12 +32,23 @@ public class Warmups {
 
     }
 
+    public static void count(int n) {
+        if (n <= 0) {
+            System.out.println("All done!");
+            return;
+        }
+        System.out.println(n);
+        count(n - 1);
+    }
+
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a String: ");
         String userInput = sc.next();
         System.out.println(noRepeats(userInput));
+
+        count(5);
 
     }
 }
