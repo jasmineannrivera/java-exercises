@@ -1,20 +1,26 @@
 public class Person {
-    public String firstName;
-    public String lastName;
 
-    public String sayHello() {
-        return String.format("Hello from %s %s!", firstName, lastName);
+    private String name;
+
+    public Person (String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void sayHello(){
+        System.out.printf("Hello, %s!\n", name);
     }
 
     public static void main(String[] args) {
-        Person jasmine = new Person();
-        jasmine.firstName = "Jasmine";
-        jasmine.lastName = "Rivera";
-        System.out.println(jasmine.sayHello());
 
-        Person brothey = new Person();
-        brothey.firstName = "Andre";
-        brothey.lastName = "Rivera";
-        System.out.println(brothey.sayHello());
+        Person me = new Person("Jasmine");
+        me.sayHello();
     }
 }
