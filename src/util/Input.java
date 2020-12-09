@@ -14,12 +14,12 @@ public class Input {
         this.scanner = scanner;
     }
 
-    public String getString() {
-        return getString("Enter a string: ");
-    }
+//    public String getString() {
+//        return getString("Enter a string: ");
+//    }
 
-    public boolean yesNo() {
+//    public boolean yesNo() {
 
-    }
+//    }
 
 }
