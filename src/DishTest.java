@@ -1,25 +1,30 @@
 public class DishTest  {
     public static void main(String[] args) {
-        Dish dish1 = new Dish();
-        dish1.costInCents = 500;
-        dish1.nameOfDish = "Pork Bun";
-        dish1.wouldRecommend = true;
+        //Refactor code as needed in DishTest to access and modify dish object property values
+        Dish dish1 = new Dish(300, "Brisket Tacos", true);
+        Dish dish2= new Dish();
+        dish2.setCostInCents(300);
+        dish2.setNameOfDish("Spaghetti");
+        dish2.setWouldRecommend(true);
 
-        dish1.printSummary();
 
-        Dish dish2 = new Dish();
-        dish2.costInCents = 300;
-        dish2.nameOfDish = "Brisket Taco";
-        dish2.wouldRecommend = true;
+//        Dish dish2 = new Dish();
+//        dish2.costInCents = 300;
+//        dish2.nameOfDish = "Brisket Taco";
+//        dish2.wouldRecommend = true;
+//
+//        dish2.printSummary();
+//        Dish dish3 = new Dish();
+//        dish3.nameOfDish = "Spaghetti";
+//        dish3.costInCents = 600;
+//        dish3.wouldRecommend = false;
 
-        dish2.printSummary();
-        Dish dish3 = new Dish();
-        dish3.nameOfDish = "Spaghetti";
-        dish3.costInCents = 600;
-        dish3.wouldRecommend = false;
+        DishTools.shoutDishName(dish1);
+        DishTools.analyzeDishCost(dish1);
+        DishTools.flipRecommendation(dish1);
 
-        DishTools.shoutDishName(dish3);
-        DishTools.analyzeDishCost(dish3);
-        DishTools.flipRecommendation(dish3);
+        DishTools.shoutDishName(dish2);
+        DishTools.analyzeDishCost(dish2);
+        DishTools.flipRecommendation(dish2);
     }
 }
