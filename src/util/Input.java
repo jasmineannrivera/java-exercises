@@ -13,6 +13,9 @@ public class Input {
     }
     //The class should have the following methods, all of which return command line input from the user:
 
+    public void clear() {
+        this.scanner.nextLine();
+    }
 
     //method to prompt user for string then return their input
     public String getString() {
