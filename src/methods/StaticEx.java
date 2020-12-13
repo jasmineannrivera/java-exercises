@@ -8,10 +8,6 @@ public class StaticEx {
 
         System.out.println(a);
 
-        //this is me typing on my old keyboard
-//        this is me typing on my new keyboard
-//        new keyboard
-
 
     }
 }
