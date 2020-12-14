@@ -2,13 +2,13 @@ package zoo;
 
 public class Animal {
 
-    private int age;
+    protected int age;
 
-    private int weight;
+    protected int weight;
 
-    private boolean isHerbivore;
+    protected boolean isHerbivore;
 
-    String category;
+    protected String category;
 
     public Animal(int age, int weight, boolean isHerbivore, String category) {
         this.age = age;
