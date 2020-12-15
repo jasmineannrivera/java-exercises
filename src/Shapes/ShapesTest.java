@@ -1,18 +1,21 @@
 package Shapes;
 
+//Modify your ShapesTest class, use it to:
+//
+//declare a variable of the type Measurable named myShape.
+//Test your code by creating instances of both Square and Rectangle and assigning them to myShape so you can display the shape's area and perimeter.
+
 public class ShapesTest {
     public static void main(String[] args) {
-        Rectangle box1 = new Rectangle(5,4);
-        System.out.println(box1.getPerimeter());
-        System.out.println(box1.getArea());
+        Quadrilateral myShape;
+        myShape = new Rectangle(7, 11);
+        System.out.println(myShape.getPerimeter());
+        System.out.println(myShape.getArea());
 
-        //create a variable of the type Rectangle named box2 and assign it a new instance of the Square class that has a side value of 5.
-        Rectangle box2 = new Square(5);
+        myShape = new Square(4);
+        System.out.println(myShape.getPerimeter());
+        System.out.println(myShape.getArea());
 
-        //verify that the getPerimeter and getArea methods return 20 and 25, respectively.
-
-        System.out.println(box2.getPerimeter());
-        System.out.println(box2.getPerimeter());
-        System.out.println(box2.getArea());
+        System.out.println(myShape.getWidth());
     }
 }

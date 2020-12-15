@@ -1,25 +1,39 @@
 package Shapes;
 
-//Create a class named Square, also inside of shapes, that extends Rectangle. Square should define a constructor that accepts one argument, side, and calls the parent's constructor to set both the length and width to the value of side.
-public class Square extends Rectangle {
+//Change your existing Square class to extend Quadrilateral.
+//
+//Because the length of all sides of a square are the same, the methods for setting the length and the width should set both protected properties.
 
-    public Square(int side) {
+public class Square extends Quadrilateral {
+    public Square(double side) {
+        super();
         this.length = side;
         this.width = side;
     }
-    //In the Square class, override the getArea and getPerimeter methods with the following definitions for a square
-    @Override
-    public int getArea() {
-        System.out.println("overridden method");
-        return this.length * this.length;
+
+    public void setSide(double side) {
+        this.length = side;
+        this.width = side;
     }
 
     @Override
-    public int getPerimeter(){
-        System.out.println("overridden method");
-        return 4 * this.length;
+    public void setLength(double length) {
+        this.setSide(length);
     }
 
+    @Override
+    public void setWidth(double width) {
+        this.setSide(length);
+    }
 
+    @Override
+    public double getPerimeter() {
+        return 4 * length;
+    }
+
+    @Override
+    public double getArea() {
+        return length * length;
+    }
 
 }
